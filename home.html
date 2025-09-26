@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<style>
+    body, html {
+        scroll-behavior: smooth;
+    } 
+    
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        text-align: center;
+        max-width: 1080px;
+        margin: 0 auto;
+        background-color: #e6ffff;
+    }
+
+    header {
+        border-bottom: 1px dotted gray;
+        position: sticky;
+        background-color: #e6ffff;
+        opacity: 0.9;
+        top: 0;
+        padding: 1px 0px;
+        margin-bottom: 30px;
+        backdrop-filter: blur(5px);
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+
+    nav li a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .moi {
+        background-color: bisque;
+        border-radius: 8px;
+        padding-bottom: 15px;
+        padding-top: 6px;
+    }
+
+    .villain {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid gray;
+        /* position: sticky; */
+    }
+
+    .v-text {
+        align-items: center;
+        margin-top: 45px;
+    }
+
+    .socials{
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        display: flex;
+        font-weight: bold;
+        align-items: center;
+        font-family: Calibri;
+    }
+
+    @media (max-width: 600px) {
+
+        .villain {
+            width: 325px;
+        }
+
+        .moi {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        header {
+            font-size: 12px;
+        }
+    }
+</style>
+
+
+
+<body>
+    <header>
+        <div>
+           <a style="text-decoration: none; color: black;" href="#"> 
+            <h1 style="transition: ease-in-out 0.5s"> Personal Portfolio</h1></a>
+        </div>
+
+        <nav>
+            <li class="button"><a href="#About">About</a></li>
+            <li class="button"><a href="#Services">Services</a></li>
+            <li class="button"><a href="#Contacts">Contacts</a></li>
+        </nav>
+
+    </header>
+
+
+    <div class="villain">
+        <img style="border-radius: 48%; width: 320px; height: 320px; padding-bottom: 30px;"
+            src="\Images\GxNSP4BXIAU2PXj.jpg" alt="Portfolio-intro">
+        <div class="v-text">
+            <h2>Hi, I'm Azih</h2>
+            <p>Student programming expert</p>
+            <p>* This is a test run portfolio site</p>
+        </div>
+    </div>
+
+    <section class="About" id="About" style="font-family: Franklin Gothic Medium; margin: 35px; 
+        font-size: 17px;">
+        <p>
+            I'm Azih, an aspiring master in software development and
+            webapp development
+        </p>
+        <p>
+            From the description, I'm obviously still a student,
+            I attend Landmark University, Omu-Aran.
+        </p>
+        <p>
+            Educational Qualifications:
+            <li>University Entrance Exams full credits</li>
+            <li>Second class upper in Computer Science</li>
+            <li>Full mastery of Vanilla HTML and CSS </li>
+            <li></li> 
+        </p>
+        <p>
+            I am driven, detail oriented and meticulous, creative and professional
+            with a strong focus on delivering high-quality work. 
+            I'm highly skilled at combining technical expertise with problem-solving
+            skills to bring your best ideas to life. Reliable, adaptable and dedicated is all
+            I can summarize my qualities into
+        </p>
+    </section>
+
+    <section class="moi" id="Services" style="gap: 70px;">
+        <h2 style="font-size: 20px;">
+            This is where I shall be tracking my progress and obviously updating all
+            who care on this personal project
+        </h2>
+
+        <p>
+            I aspire to provide the following services in the coming months or years
+            <img class="hero" style="width: 1000px; margin-top: 20px;" src="\Images\Screenshot (181).png" alt="Pros-only">
+        </p>
+    </section>
+
+    <footer style="max-width:auto ; height: 400px; width: auto; background-color: #ffe6e6; 
+        align-self: center; margin-top: 95px; border-radius: 12px 12px 0px 0px;" id="Contacts">
+
+        <p style="display: flex; margin-left: 70px; padding-top: 25px;">
+            Please contact me on my social media handles:
+         </p>
+
+        <div style="display: flex; margin-left: 90px; padding-top: 5px;">
+           
+            <div style="padding: 3px;">
+                <li class="origin"><a class="socials" href="facebook.html"><img src="\Images\icons8-facebook-48.png" alt="Facebook page">Facebook page</a></li>
+                <li class="origin"><a class="socials" href="instagram.html"><img src="\Images\icons8-instagram-48.png" alt="Instagram page">Instagram page</a></li>
+                <li class="origin"><a class="socials" href="linkedin.html"><img src="\Images\icons8-linkedin-48.png" alt="Linkedin page">Linkedin page</a></li>
+             </div>
+        
+        </div>
+
+        <p style="padding-top: 134px; font-size: 11px;">
+            Run by Azih Daniel since 2025, All rights reserved
+        </p>
+    </footer>
+</body>
+
+</html>
